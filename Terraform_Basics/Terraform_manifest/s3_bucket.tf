@@ -11,7 +11,7 @@ resource "random_string" "suffix" {
 
 #Resource Block : AWS S3 Bucket
 resource "aws_s3_bucket" "demo_bucket" {
-  bucket = "DevopsDemo-${random_string.suffix.result}"
+  bucket = "devopsdemo-${random_string.suffix.result}"
 
   tags = {
     Name        = "My bucket"
